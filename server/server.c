@@ -165,25 +165,25 @@ ret:
     return buf;
 };
 
-char welcome[] = "220 - Welcome!\n";
-char login_success[] = "230 Login success.\n";
+char welcome[] = "220 Service ready for new user.\n";
+char login_success[] = "230 User logged in, proceed.\n";
 char login_invalid[] = "430 Invalid username/password.\n";
 char logout_success[] = "221 Service closing control connection.\n";
-char need_pass[] = "331 Please specify the password.\n";
+char need_pass[] = "331 User name okay, need password.\n";
 char system_info[] = "215 LINUX\n";
 char bad_sequence[] = "503 Bad sequence of commands.\n";
 char not_implemented[] = "502 Command not implemented.\n";
-char port_success[] = "200 Port command OK.\n";
+char port_success[] = "200 Command Okay.\n";
 char typei_success[] = "200 Switching to binary mode (image).\n";
 char typea_success[] = "200 Switching to ASCII mode.\n";
 char file_unavailable[] = "550 File unavailable. \n";
-char need_login[] = "530 Please log in first.\n";
+char need_login[] = "530 Not logged in.\n";
 char delete_success[] = "250 Delete success. \n";
 
 char opening_data_conn[] = "150 Opening data connection.\n";
-char closing_data_conn[] = "226 Command successful. Closing data connection.\n";
-char cant_open_data[] = "425 Failure while opening data connection.\n";
-char succ[] = "200 OK.\n";
+char closing_data_conn[] = "226 Closing data connection. Requested file action successful. \n";
+char cant_open_data[] = "425 Can't open data connection.\n";
+char succ[] = "200 Command Okay.\n";
 char internal_err[] = "451 Internal server error.\n";
 char invalid_param[] = "504 Command not implemented for that parameter.\n";
 
